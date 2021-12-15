@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "module": "CommonJS",
+        "types": [
+            "node",
+            "jest",
+            "bunyan"
+        ],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "esModuleInterop": true,
+        "alwaysStrict": true,
+        "baseUrl": "./",
+        "outDir": "./dist",
+        "removeComments": false,
+        "allowJs": false,
+        "paths": {
+            "@types/*": [
+                "@types/*"
+            ],
+            "@src/*": [
+                "src/*"
+            ]
+        }
+    },
+    "watchOptions": {
+        "watchFile": "useFsEvents",
+        "watchDirectory": "useFsEvents",
+        "fallbackPolling": "dynamicPriority"
+    },
+    "include": [
+        "src",
+        "test",
+        "@types"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

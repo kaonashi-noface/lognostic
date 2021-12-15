@@ -1,1 +1,0 @@
-// TODO: Do not expect functionality from this module until lognostic@1.0.0 is released.

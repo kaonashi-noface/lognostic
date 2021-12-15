@@ -1,0 +1,29 @@
+version: 2.1
+
+jobs:
+    main_build_job:
+        docker:
+            - image: cimg/node:current
+        steps:
+            - checkout
+            - run:
+                  name: 'Installing Dependencies'
+                  command: npm ci
+            - run:
+                  name: 'Running Unit Tests'
+                  command: npm run test:ci-coverage
+                  environment:
+                      JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
+            - run:
+                  name: 'Running Unit Tests'
+                  command: cat coverage/lcov.info
+            - run:
+                  name: 'Uploading Code Coverage'
+                  command: npm run coveralls
+            - store_test_results:
+                  path: ./reports/junit/
+
+workflows:
+    main_build_workflow:
+        jobs:
+            - main_build_job
