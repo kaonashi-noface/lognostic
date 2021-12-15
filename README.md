@@ -1,4 +1,21 @@
 # Lognostic
+<a href="https://app.circleci.com/pipelines/github/kaonashi-noface/lognostic?branch=main&filter=all">
+    <img src="https://circleci.com/gh/kaonashi-noface/lognostic.svg?style=svg" alt="CircleCI Build" />
+</a>
+<a href='https://coveralls.io/github/kaonashi-noface/lognostic?branch=main'>
+    <img src='https://coveralls.io/repos/github/kaonashi-noface/lognostic/badge.svg?branch=main' alt='Code Coverage' />
+</a>
+
+<a href='https://www.npmjs.com/package/lognostic'>
+    <img alt="npm version" src="https://img.shields.io/npm/v/lognostic" />
+</a>
+<a href='https://www.npmjs.com/package/lognostic'>
+    <img alt="license" src="https://img.shields.io/npm/l/lognostic" />
+</a>
+<a href='https://www.npmjs.com/package/lognostic'>
+    <img alt="downloads" src="https://img.shields.io/npm/dm/lognostic" />
+</a>
+
 Lognostic is a logger facade that provides decorators and context management.
 
 > WARNING: This module does not yet have any functionality.
