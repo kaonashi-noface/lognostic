@@ -1,0 +1,32 @@
+{
+    "name": "lognostic",
+    "version": "0.0.1",
+    "description": "Logger facade that provides decorators and context management - agnostic from implementation.",
+    "author": {
+        "name": "no_face"
+    },
+    "homepage": "https://github.com/kaonashi-noface/lognostic",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaonashi-noface/lognostic.git"
+    },
+    "scripts": {
+        "build": "rm -rf dist && ./node_modules/.bin/webpack-cli",
+        "test": "./node_modules/.bin/jest --colors \"test/.*(test.ts)\"",
+        "test:unit": "./node_modules/.bin/jest --colors \"test/unit/.*(test.ts)\"",
+        "test:coverage": "./node_modules/.bin/jest --colors --coverage \"test/unit/.*(test.ts)\"",
+        "test:ci-coverage": "./node_modules/.bin/jest --colors --ci --runInBand --reporters=default --reporters=jest-junit --coverage \"test/unit/.*(test.ts)\"",
+        "coveralls": "./node_modules/coveralls/bin/coveralls.js < coverage/lcov.info",
+        "publish:dry-run": "npm publish ./dist --dry-run"
+    },
+    "keywords": [
+        "logger",
+        "interface",
+        "facade",
+        "agnostic",
+        "context",
+        "decorator",
+        "annotation"
+    ],
+    "license": "ISC"
+}
